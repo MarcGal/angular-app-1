@@ -1,2 +1,8 @@
+<!-- since app component is our root, all other components will be included here. 
+ Components are typescript classes -->
 <input type="text" [(ngModel)]="name">
 <h1>{{name}}</h1>
+<h1>Im in the app component!!</h1>
+<hr>
+<!-- Here we import our custom component using the defined selector-->
+<app-server></app-server>
