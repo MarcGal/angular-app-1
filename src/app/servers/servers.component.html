@@ -1,5 +1,15 @@
 <!--This is properety binding using square brackets. we can bind to all html properties-->
-<button class="btn btn-primary" [disabled]="!allowNewServer" >Add server</button>
+<label>Change server name</label>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
+<button 
+    class="btn btn-primary" 
+    [disabled]="!allowNewServer" 
+    (click)="onCreateServer()"
+    >Add server
+</button>
+<p>{{ serverCreationStatus }}</p>
+
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
