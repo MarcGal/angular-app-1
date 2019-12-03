@@ -3,6 +3,7 @@
 // importing the class component
 import {Component} from '@angular/core'
 
+
 // define that component's metadata that will be later interpreted in order to render the component
 @Component({
     selector: 'app-server', // the selector is used to reference and import the component in other parts of the app
